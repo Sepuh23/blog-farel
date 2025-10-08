@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📁CARI-APO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1> 📁CARI-APO</h1>
+                <p>Download File Mudah dan Cepat</p>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span id="fileCount">23</span>
+                    <small>File Tersedia</small>
+                </div>
+                <div class="stat">
+                    <span id="totalSize">38,1 GB</span>
+                    <small>Total Size</small>
+                </div>
+            </div>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Cari file... (contoh: debian, pdf, zip)">
+            <button onclick="searchFiles()">🔍 Cari</button>
+        </div>
+
+        <div class="categories">
+            <button class="category-btn active" onclick="filterCategory('all')">Semua</button>
+            <button class="category-btn" onclick="filterCategory('os')">OS</button>
+            <button class="category-btn" onclick="filterCategory('tools')">SETUP</button>
+            <button class="category-btn" onclick="filterCategory('media')">VIDIO</button>
+        </div>
+
+        <div class="file-list" id="fileList">
+            <!-- File list akan diisi oleh JavaScript -->
+        </div>
+
+        <footer>
+            <p>&copy; ©️(Farel) 2025 CARI-APO </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
